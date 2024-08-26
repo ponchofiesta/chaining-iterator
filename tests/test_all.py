@@ -115,3 +115,13 @@ def test_permutations():
 def test_position():
     actual = I([1, 2, 3]).position(lambda item: item == 2)
     check.equal(actual, 1)
+
+
+def test_sort():
+    actual = I([2, 1, 3]).sort()
+    check.equal(actual, [1, 2, 3])
+
+
+def test_first():
+    actual = I([2, 1, 3]).first()
+    check.equal(actual, 2)
